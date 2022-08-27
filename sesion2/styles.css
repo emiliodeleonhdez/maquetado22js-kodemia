@@ -1,0 +1,44 @@
+/* table, th, td, div {
+    border: 1px solid black;
+} */
+
+.hi {
+    /* No quiero borde goey :V */
+    border: none;
+    color: purple;
+    font-size: 2cm;
+}
+
+.howAreU {
+    border: 10px dotted gray;
+    background-color: aqua;
+    color: brown;
+    font-size: 1rem;
+}
+
+#id_container {
+    /* view port width */
+    width: 30vw;
+    /* view port height */
+    height: 100vh; 
+    border: 10px solid blue;
+    background-color: orange;
+}
+
+/* div.elfo ol>li {
+    background-color: yellow;
+} */
+
+.div__lord-of-the-rings--green >*{
+    background-color: hotpink;
+
+}
+
+#legolas ol.ol__movies--bold>li[title="movie"] {
+    font-weight: bold;
+}
+
+.div__lord-of-the-rings--green {
+    width: 250px;
+    height: 100vh;
+}

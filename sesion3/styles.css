@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .container__main {
+    color: blueviolet;
+}
+
+.p__secondary--green {
+    color: green;
+}
+
+.p__secondary--blue{
+    color: blue;
+}
+
+.p__secondary {
+    font-size: 18px;
+}
+
+.p {
+    background-color: hotpink;
+}
+
+.p__third--big {
+    font-size: large;
+    background-color: yellow;
+}
+
+.p {
+    background-color: darkblue;
+    color: white;
+} */
+
+.div__login {
+    width: 180px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.form__login > *{
+    margin-bottom: 7px;
+}
+
+.button__submit {
+    background-color: rgb(2, 156, 238);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    width: 160px;
+    color: white;
+}
+
+.button__submit:hover {
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+.form__login > .input__email--green {
+    color: green;
+}
+
+.form__login > .input__email--green + label {
+    font-style: italic;
+}
+
+/* .form__login > .input__password + button {
+    box-shadow: 10px 5px 5px rgba(183, 183, 183, .5);
+} */
+
+.form__login button:last-child {
+    border: 1px solid black;
+}
+
+.form__login > .button__submit:last-child {
+    box-shadow: 10px 5px 5px rgba(183, 183, 183, .5);
+}
