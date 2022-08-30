@@ -6,6 +6,10 @@ h1 {
     color: hotpink;
 }
 
+.div__block-examples {
+    height: 900vh;
+}
+
 .div__block-examples > * {
     width: 90px;
     height: 90px;
@@ -15,20 +19,46 @@ h1 {
 
 .div__static--yellow {
     background-color: yellow;
+    position: static;
 }
 
 .div__relative--hotpink {
     background-color: hotpink;
+    position: relative;
+    top: 40px;
+    left: 40px;
 }
 
 .div__fixed--blue {
     background-color: blue;
+    position: fixed;
+    top: 820px;
+    left: 40px;
 }
 
 .div__absolute--red {
     background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 40px;
 }
 
 .div__sticky--peru {
     background-color: peru;
+    position: sticky;
+    top: 20px;
+}
+
+.img__z-index {
+    position: absolute;
+    z-index: -3;
+}
+
+.p__z-index--white {
+    color: white;
+}
+
+.button__z-index {
+    position: absolute;
+    z-index: 5;
 }
