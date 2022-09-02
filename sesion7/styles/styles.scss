@@ -1,0 +1,56 @@
+@import "vars";
+
+@mixin flex-box($box-width:90px, $box-height:90px, $margin-box:15px) {
+    width: $box-width;
+    height: $box-height;
+    margin: $margin-box;
+    border: 1px solid black;
+    background-color: hotpink;
+}
+
+h1 {
+    color: $esteban-color;
+}
+
+p {
+    color: $esteban-color;
+    font-weight: $font-bold;
+}
+
+.div__flex-container {
+    display: flex;
+    .div__flex-box {
+        width: 90px;
+        height: 90px;
+        border: $standard-border;
+        background-color: $esteban-color;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.div__flex-container--mixin {
+    display: flex;
+    .div__flex-box {
+        @include flex-box(300px);
+    }
+}
+
+.div__flex-container--emi {
+    display: flex;
+    .div__flex-box {
+        @include flex-box(300px, 400px, $standard-margin);
+    }
+}
+
+.div__social-media {
+    .img__icon-facebook{
+        border: $standard-border;
+        border-radius: $boder-circle;
+        width: $social-media-icon-width;
+        height: $social-media-icon-height;
+        padding: $social-media-icon-padding;
+    }
+}
