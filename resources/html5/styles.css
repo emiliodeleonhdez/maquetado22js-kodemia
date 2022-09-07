@@ -1,0 +1,220 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* A esto se le conoce como selector, este selecciona el elemento HTML que vamos a diseñar o añadir el estilo  */
+/* Luego, tenemos un conjunto de llaves, dónde vamos a declarar la regla o conjunto de reglas que queremos aplicar   */
+
+p {
+    color: blueviolet;
+    font-size: 32px;
+}
+
+input[placeholder] {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+[title~="flower"] {
+    background-color: yellow;
+}
+
+.inheritance {
+    color: green;
+}
+
+p {
+    color: brown;
+    font-size: 42px;
+}
+
+h5 {
+    color: teal;
+}
+
+.classSelector{
+    color: yellowgreen;
+}
+
+#idSelector{
+    color: blue;
+    background-color: rgb(255, 234, 0);
+}
+
+.specificity p#specificityId{
+    color: white;
+    background-color: blue;
+    font-size: .5cm;
+}
+
+*.universal{
+    color: red;
+    font-size: 2rem;
+}
+
+a{
+    color: green;
+    text-decoration: line-through;
+    /* para cambiarle la decoración del link podemos usar la propiedad text-decoration  */
+}
+
+.box{
+    width: 90px;
+    height: 90px;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    border: 6px rgb(0, 255, 60) solid;
+    /* border puede recibir diferentes valores, en este caso le estamos pasando el grosor del borde, el color y el tipo de borde */
+}
+
+#boxId{
+    width: 50%;
+    background-color: firebrick;
+}
+
+.atr{
+    display: flex;
+    flex-direction: column;
+}
+
+.atr >*{
+    margin-bottom: 10px;
+}
+.colorSpan{
+    color: #7b6172;
+    font-weight: bold;
+}
+
+.backgroundColorSpan{
+    width: 90px;
+    height: 90px;
+    background-color: chocolate;
+}
+
+.borderBox{
+    width: 90px;
+    /* 1 */
+    /* Añade un ancho a un elemento */
+    height: 90px;
+    /* Añade un alto a un elemento */
+    /* 2 */
+    padding: 10px;
+    /* 3 */
+    /* padding es usado para crear un espacio en el interir de un elemento  */
+    margin: 10px;
+    /* margin es usado para crear un espacio en el exterior de un elemento  */
+
+    /* margin-top: 50px;
+    /* margin top es usado para crear un espacio en el exterior orientado hacia arriba de un elemento  */
+
+    /* margin-left: 25px; */
+    /* margin left es usado para crear un espacio en el exterior orientado hacia la izquierda de un elemento  */
+
+    margin-right: 10px;
+    margin-bottom: 45px;
+    background-color: hotpink;
+    border: 10px forestgreen dotted;
+    border-radius: 10%;
+}
+
+.displayNone .displayText{
+    display: none;
+}
+
+.displayInline .displayText{
+    display: inline;
+    color: red;
+}
+
+.displayBlock .displayText{
+    display: block;
+    color: red;
+}
+
+.displayInlineBlock .displayText{
+    display: inline-block;
+    color: red;
+}
+
+.box-with-absolute-units>*{
+    margin: 10px;
+}
+
+.box-with-absolute-units__pixels{
+    width: 90px;
+    height: 90px;
+    color: #ffff;
+    background-color: cornflowerblue;
+}
+
+.box-with-absolute-units__points{
+    width: 2.5cm;
+    height: 2.5cm;
+    color: #ffff;
+    background-color: rgb(128, 0, 255);
+}
+
+.box-with-relative-units>*{
+    margin: 10px;
+}
+
+.box-with-relative-units__rem{
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: khaki;
+}
+
+.box-with-relative-units__em{
+    width: 6em;
+    height: 6em;
+    background-color: blueviolet;
+}
+
+.box-with-relative-units__percentage{
+    width: 30%;
+    height: 80%;
+    background-color: rgb(237, 140, 210);
+}
+
+.box-with-relative-units__viewport-width{
+    width: 30vw;
+    background-color: darkblue;
+    color: white;
+}
+
+.box-with-relative-units__viewport-height{
+    height: 20vh;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.box-model__box--border-violet{
+    width: 90px;
+    border: 5px solid blueviolet;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box-model__box--border-green{
+    width: 90px;
+    border: 5px solid green;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box-model__box--border-box{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid hotpink;
+    box-sizing: border-box;
+}
+
+.box-model__box--content-box{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid rgb(166, 255, 0);
+    box-sizing: content-box;
+}
