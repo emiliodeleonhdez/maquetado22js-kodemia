@@ -8,6 +8,20 @@
     background-color: hotpink;
 }
 
+                            //0
+@mixin nav-buttons($font-family-type) {
+                     //0
+    font-family: $font-family-type ;
+}
+
+
+
+.nav__button-home {
+    @include nav-buttons($generic-font-family)
+}
+
+
+
 h1 {
     color: $esteban-color;
 }
@@ -52,5 +66,16 @@ p {
         width: $social-media-icon-width;
         height: $social-media-icon-height;
         padding: $social-media-icon-padding;
+    }
+}
+
+
+.button__my-button--gren {
+    @include mybutton (100px, 200px, $esteban-color)
+}
+
+.contendor__padre {
+    .botones_hijos{
+        @include mybutton (100px, 200px, $esteban-color)
     }
 }
