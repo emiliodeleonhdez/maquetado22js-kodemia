@@ -1,0 +1,15 @@
+.container__border {
+    width: 400px;
+    height: 280px;
+}
+
+@mixin flex-box {
+    width: 90px;
+    height: 90px;
+}
+
+.div__container-flex {
+    .div__flex-box {
+        @include flex-box;
+    }
+}
