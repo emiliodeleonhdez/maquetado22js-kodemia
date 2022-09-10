@@ -1,89 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>our koders</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/favorito.png">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./assets/favorito.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/kodemia.png" class="img__logo-kodemia" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/kodemia.png" class="img__logo-kodemia" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./koders.html"
+                >Our Koders</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Social Media
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./koders.html">Our Koders</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Social Media
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Facebook</a></li>
-                            <li><a class="dropdown-item" href="#">Instagram</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
 
     <!-- --card-- -->
     <div class="container mt-5">
-        <div class="row">
-            <div class="card col mx-3 card__koder" style="width: 18rem;">
-                <div class="d-flex justify-content-center my-2">
-                    <img class="img__koder-photo rounded-circle" src="https://ca.slack-edge.com/TCRFJBKB6-U03RR0HGW2J-da3984cb9a80-192" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Anay Delgado</h5>
-                  <p class="card-text">Koder de la generación 22 de JS - Quiere ser Front-End Dev</p>
-                  <a class="btn"><img class="card__link card__link-linkedin" src="./assets/linkedin.png" alt=""></a>
-                  <a class="btn"><img class="card__link card__link-twitter" src="./assets/gorjeo.png" alt=""></a>
-                </div>
-              </div>
-              <div class="card col mx-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Diego el chico nuevo</h5>
-                  <p class="card-text">Diego, Koder de la generación 22 de JS - Emprendedor de Cacalli.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col mx-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cris, el de la camara apagada</h5>
-                  <p class="card-text">Cris, Koder de la generación 22 de JS - Quiere ser koder pero nunca prende la cámara</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+      <div class="row">
+        <div class="card col mx-3 card__koder" style="width: 18rem">
+          <div class="d-flex justify-content-center my-2">
+            <img
+              class="img__koder-photo rounded-circle"
+              src="https://ca.slack-edge.com/TCRFJBKB6-U03RR0HGW2J-da3984cb9a80-192"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Anay Delgado</h5>
+            <p class="card-text">
+              Koder de la generación 22 de JS - Quiere ser Front-End Dev
+            </p>
+            <a class="btn"
+              ><img
+                class="card__link card__link-linkedin"
+                src="./assets/linkedin.png"
+                alt=""
+            /></a>
+            <a class="btn"
+              ><img
+                class="card__link card__link-twitter"
+                src="./assets/gorjeo.png"
+                alt=""
+            /></a>
+          </div>
         </div>
+        <!--card vanne-->
+        <div class="card col mx-3 card__koder" style="width: 18rem">
+          <div class="d-flex justify-content-center my-2">
+            <img
+              class="img__koder-photo rounded-circle"
+              src="https://ca.slack-edge.com/TCRFJBKB6-U03MXCW9KEF-5637c67fa2ff-512"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Vanessa Martínez</h5>
+            <p class="card-text">
+              Koder de la generación 22 de JS - Quiere ser Front-End Dev
+            </p>
+            <a class="btn"
+              ><img
+                class="card__link card__link-linkedin"
+                src="./assets/linkedin.png"
+                alt=""
+            /></a>
+            <a class="btn"
+              ><img
+                class="card__link card__link-twitter"
+                src="./assets/gorjeo.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="card col mx-3" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Diego el chico nuevo</h5>
+            <p class="card-text">
+              Diego, Koder de la generación 22 de JS - Emprendedor de Cacalli.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col mx-3" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Cris, el de la camara apagada</h5>
+            <p class="card-text">
+              Cris, Koder de la generación 22 de JS - Quiere ser koder pero
+              nunca prende la cámara
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-</body>
-
+  </body>
 </html>
