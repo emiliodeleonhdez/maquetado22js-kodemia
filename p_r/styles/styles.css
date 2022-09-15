@@ -10,10 +10,4 @@
   height: 150px;
   width: 180px;
   align-items: center;
-}
-
-@media screen and (max-width: 576px) {
-  .card__koder-title {
-    color: hotpink;
-  }
 }/*# sourceMappingURL=styles.css.map */
